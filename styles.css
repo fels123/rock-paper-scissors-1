@@ -30,9 +30,23 @@ img:hover {
 }
 
 button {
-  margin-left: 47%;
+  margin-left: 45%;
   cursor: pointer;
   background-color: blue;
   color: red;
   padding: 0.2rem 0.5rem;
+}
+
+#selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectionChoice {
+  text-align: center;
+  padding: 0.5rem 4rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  font-size: larger;
 }
