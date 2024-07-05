@@ -3,34 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to your external stylesheet -->
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./app.js" defer></script>
-    <title>Rock Rock Scissors</title>
+    <title>Rock Paper Scissors</title>
   </head>
   <body>
     <h1>Rock Paper Scissors</h1>
-    <div id="card-container">
-      <div class="card" id="rock">
-        <img src="./images/rock.png" alt="rock" />
+    <div id="game-board">
+      <div id="card-container">
+        <div class="card" id="rock">
+          <img src="./images/rock.png" alt="rock" />
+        </div>
+        <div class="card" id="paper">
+          <img src="./images/paper.png" alt="paper" />
+        </div>
+        <div class="card" id="scissors">
+          <img src="./images/scissors.png" alt="scissors" />
+        </div>
       </div>
-      <div class="card" id="paper">
-        <img src="./images/paper.png" alt="paper" />
+      <div id="selection">
+        <div class="selectionChoice">
+          <p id="player-winCount">0</p>
+          <p>Player</p>
+        </div>
+        <div class="selectionChoice">
+          <p id="computer-winCount">0</p>
+          <p>Computer</p>
+        </div>
       </div>
-      <div class="card" id="scissors">
-        <img src="./images/scissors.png" alt="scissors" />
-      </div>
+      <div id="result"></div>
     </div>
-    <div id="selection">
-      <div class="selectionChoice">
-        <p id="player-winCount">0</p>
-        <p>Player</p>
-      </div>
-      <div class="selectionChoice">
-        <p id="computer-winCount">0</p>
-        <p>Computer</p>
-      </div>
-    </div>
-    <div id="result">Player Wins</div>
-    <button id="btn">Game Start</button>
+
+    <button id="newGame">New Game</button>
+
+    <!-- Link to your JavaScript file with defer attribute for asynchronous loading -->
+    <script src="./app.js" defer></script>
   </body>
 </html>
